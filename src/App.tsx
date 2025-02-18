@@ -60,7 +60,7 @@ function App() {
       case 'servicios':
         return (
           <section className="py-16 container mx-auto px-4">
-            <h3 className="text-3xl font-serif text-center mb-12 text-gray-800">Nuestros Servicios</h3>
+            <h3 className="text-3xl font-serif text-center mb-12 text-gray-800">Mis Especialidades</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <h4 className="text-2xl font-serif text-gray-800 mb-4">Tartas Personalizadas</h4>
@@ -69,17 +69,17 @@ function App() {
                   <li>• Tartas de boda</li>
                   <li>• Celebraciones especiales</li>
                   <li>• Cumpleaños temáticos</li>
-                  <li>• Eventos corporativos</li>
+                  <li>• Reposteria sin Gluten</li>
                 </ul>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <h4 className="text-2xl font-serif text-gray-800 mb-4">Talleres y Cursos</h4>
-                <p className="text-gray-600 mb-4">Aprende el arte del fondant con nuestros expertos pasteleros.</p>
+                <h4 className="text-2xl font-serif text-gray-800 mb-4">Tips y Recomendaciones</h4>
+                <p className="text-gray-600 mb-4">Aprende el arte del fondant.</p>
                 <ul className="space-y-2 text-gray-600">
                   <li>• Técnicas básicas de fondant</li>
                   <li>• Decoración avanzada</li>
                   <li>• Modelado de figuras</li>
-                  <li>• Cursos personalizados</li>
+                  <li>• Consejos de Reposteria</li>
                 </ul>
               </div>
             </div>
@@ -146,7 +146,7 @@ function App() {
                     onClick={() => handleNavigation('contacto')}
                     className="bg-[#E8847D] hover:bg-[#D67670] text-white px-8 py-3 rounded-full transition-colors"
                   >
-                    Solicitar Presupuesto
+                    Contacto
                   </button>
                 </div>
               </div>
@@ -154,7 +154,7 @@ function App() {
 
             {/* Featured Cakes */}
             <section className="py-16 container mx-auto px-4">
-              <h3 className="text-3xl font-serif text-center mb-12 text-gray-800">Nuestras Creaciones</h3>
+              <h3 className="text-3xl font-serif text-center mb-12 text-gray-800">Mis Creaciones</h3>
               <div className="grid md:grid-cols-3 gap-8">
                 {cakes.map((cake) => (
                   <div key={cake.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
@@ -187,7 +187,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 cursor-pointer" onClick={() => handleNavigation('inicio')}>
               <ChefHat className="h-8 w-8 text-[#E8847D]" />
-              <h1 className="text-2xl font-serif text-gray-800">Dulces Creaciones</h1>
+              <h1 className="text-2xl font-serif text-gray-800">Las Tartas de Julia</h1>
             </div>
             
             {/* Desktop Navigation */}
@@ -218,7 +218,7 @@ function App() {
                   Galería
                 </button>
                 <button onClick={() => handleNavigation('servicios')} className="px-4 py-2 text-left text-gray-600 hover:bg-[#FDF8F5] hover:text-[#E8847D] transition-colors">
-                  Servicios
+                  Tips y Recomendaciones
                 </button>
                 <button onClick={() => handleNavigation('contacto')} className="px-4 py-2 text-left text-gray-600 hover:bg-[#FDF8F5] hover:text-[#E8847D] transition-colors">
                   Contacto
@@ -238,7 +238,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-6 md:mb-0 cursor-pointer" onClick={() => handleNavigation('inicio')}>
               <ChefHat className="h-6 w-6 text-[#E8847D]" />
-              <span className="text-xl font-serif text-gray-800">Dulces Creaciones</span>
+              <span className="text-xl font-serif text-gray-800">Las Tartas de Julia</span>
             </div>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-[#E8847D]">
@@ -253,7 +253,7 @@ function App() {
             </div>
           </div>
           <div className="text-center mt-8 text-gray-500 text-sm">
-            © 2024 Dulces Creaciones. Todos los derechos reservados.
+            © 2025 Las Tartas de Julia. Todos los derechos reservados.
           </div>
         </div>
       </footer>
