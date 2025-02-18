@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import { Heart, Instagram, Facebook, Mail, ChefHat, Menu, X } from 'lucide-react';
+import tarta1 from './assets/tarta1.jpg';
+import tarta2 from './assets/tarta2.jpg';
+import tarta3 from './assets/tarta3.jpg';
+import tarta6 from './assets/tarta6.jpg';
+import tarta15 from './assets/tarta15.jpg';
+import tarta30 from './assets/tarta30.jpg';
+
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,26 +14,104 @@ function App() {
 
   const cakes = [
     {
-      id: 1,
-      title: "Tarta de Bodas Elegante",
+      id:1,
+      title: "Tarta Cumpleaños Halloween",
       description: "Delicada tarta de tres pisos decorada con rosas de fondant y perlas comestibles.",
-      image: "https://images.unsplash.com/photo-1623428187969-5da2dcea5eea?auto=format&fit=crop&q=80&w=800",
-      category: "Bodas"
+      image: tarta1,
+      category: "Cumpleaños"
     },
     {
       id: 2,
-      title: "Tarta Unicornio Mágica",
+      title: "Tarta Super Mario",
       description: "Colorida tarta infantil con detalles de unicornio y arcoíris en fondant.",
-      image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&q=80&w=800",
+      image: tarta2,
       category: "Infantil"
     },
     {
       id: 3,
-      title: "Tarta Floral Primaveral",
+      title: "Tarta Cumpleaños Conejito",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: tarta3,
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 4,
+      title: "Tarta Unicornio Fantasia",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: tarta6,
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 5,
+      title: "Tarta ChocoFresa y Frutos Rojos",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: tarta15,
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 6,
+      title: "Tarta Frozen",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: tarta30,
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 3,
+      title: "Tarta Super Mario",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=800",
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 3,
+      title: "Tarta Super Mario",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=800",
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 3,
+      title: "Tarta Super Mario",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=800",
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 3,
+      title: "Tarta Super Mario",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=800",
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 3,
+      title: "Tarta Super Mario",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=800",
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 3,
+      title: "Tarta Super Mario",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=800",
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 3,
+      title: "Tarta Super Mario",
+      description: "Elegante diseño con flores de fondant pintadas a mano.",
+      image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=800",
+      category: "Ocasiones Especiales"
+    },
+    {
+      id: 3,
+      title: "Tarta Super Mario",
       description: "Elegante diseño con flores de fondant pintadas a mano.",
       image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=800",
       category: "Ocasiones Especiales"
     }
+
   ];
 
   const handleNavigation = (section: string) => {
